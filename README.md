@@ -23,7 +23,7 @@ A MATLAB class implementation for analyzing Bit Error Rate (BER) performance of 
 
 ## Results
 
-### BER Perfoemance Analysis Across Different Channels and Modulations
+### BER Performance Analysis Across Different Channels and Modulations
 ![result1](test_result.png) 
 
 ### Required SNR for BER < 1e-4
