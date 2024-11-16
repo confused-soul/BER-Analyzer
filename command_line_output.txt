@@ -1,0 +1,83 @@
+>> testBERAnalyzer
+Testing BPSK M=2 in AWGN channel...
+Testing QPSK M=4 in AWGN channel...
+Testing QAM M=16 in AWGN channel...
+Testing QAM M=64 in AWGN channel...
+Testing BPSK M=2 in Rayleigh channel...
+Testing QPSK M=4 in Rayleigh channel...
+Testing QAM M=16 in Rayleigh channel...
+Testing QAM M=64 in Rayleigh channel...
+Testing BPSK M=2 in Rician channel...
+Testing QPSK M=4 in Rician channel...
+Testing QAM M=16 in Rician channel...
+Testing QAM M=64 in Rician channel...
+
+Performance Analysis Summary:
+===========================
+
+Channel Type: AWGN
+----------------
+BPSK M=2:
+  - BER range: 7.99e-02 to 0.00e+00
+  - Average BER improvement per dB: NaN orders
+  - SNR required for BER = 10^-4: 10.0 dB
+QPSK M=4:
+  - BER range: 1.57e-01 to 0.00e+00
+  - Average BER improvement per dB: NaN orders
+  - SNR required for BER = 10^-4: 12.0 dB
+QAM M=16:
+  - BER range: 5.02e-01 to 4.99e-01
+  - Average BER improvement per dB: -0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+QAM M=64:
+  - BER range: 5.02e-01 to 4.96e-01
+  - Average BER improvement per dB: 0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+
+Channel Type: Rayleigh
+----------------
+BPSK M=2:
+  - BER range: 5.01e-01 to 4.97e-01
+  - Average BER improvement per dB: 0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+QPSK M=4:
+  - BER range: 5.01e-01 to 4.97e-01
+  - Average BER improvement per dB: -0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+QAM M=16:
+  - BER range: 5.02e-01 to 4.98e-01
+  - Average BER improvement per dB: -0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+QAM M=64:
+  - BER range: 5.03e-01 to 4.98e-01
+  - Average BER improvement per dB: -0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+
+Channel Type: Rician
+----------------
+BPSK M=2:
+  - BER range: 9.87e-02 to 1.00e-05
+  - Average BER improvement per dB: 0.40 orders
+  - SNR required for BER = 10^-4: 14.0 dB
+QPSK M=4:
+  - BER range: 1.81e-01 to 1.37e-03
+  - Average BER improvement per dB: 0.21 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+QAM M=16:
+  - BER range: 5.02e-01 to 4.97e-01
+  - Average BER improvement per dB: 0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+QAM M=64:
+  - BER range: 5.03e-01 to 4.98e-01
+  - Average BER improvement per dB: 0.00 orders
+  - SNR required for BER = 10^-4: >20.0 dB
+
+Performance Comparison Table at SNR = 10dB:
+=========================================
+Modulation	|	AWGN	|	Rayleigh	|	Rician
+---------------------------------------------------------
+BPSK M=2	|	0.00e+00	|	5.00e-01	|	1.06e-03
+QPSK M=4	|	7.10e-04	|	4.99e-01	|	1.45e-02
+QAM M=16	|	4.99e-01	|	5.01e-01	|	5.00e-01
+QAM M=64	|	4.98e-01	|	4.99e-01	|	5.01e-01
+>> load("/MATLAB Drive/ber_analysis_results.mat")
